@@ -1,0 +1,23 @@
+{
+  "name": "yongoose",
+  "version": "0.0.1",
+  "description": "A mongoose repl",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:littlehaker/yongoose.git"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "repl"
+  ],
+  "author": "littlehaker",
+  "license": "MIT",
+  "dependencies": {
+    "repl.history": "~0.1.1",
+    "colors": "~0.6.0-1",
+    "mongoose": "~3.6.11",
+    "coffee-script": "~1.6.3"
+  }
+}

@@ -12,12 +12,21 @@
     "mongoose",
     "repl"
   ],
-  "author": "littlehaker",
+  "author": {
+    "name": "littlehaker"
+  },
   "license": "MIT",
   "dependencies": {
     "repl.history": "~0.1.1",
     "colors": "~0.6.0-1",
     "mongoose": "~3.6.11",
     "coffee-script": "~1.6.3"
-  }
+  },
+  "readme": "# Yongoose\n\nYongoose is a mongoose REPL.\n\n## install\n\n```\nnpm install yongoose\n```\n\n## usage\n\nCreate a file `console.js`\n\n```js\nvar yongoose = require('yongoose');\nyongoose.start(\n  \"mongodb://localhost/test\", // Mongoose collect to mongodb://localhost/test \n  __dirname + \"/models\", // Model directory. do NOT use ./models!\n  true // Is one model file a coffee file?\n);\n```\n\nRun `node console.js`, then you will see:\n\n```\nmongodb://localhost/test connected\nYongoose> Post loaded\nUser loaded\nYongoose> \n```\n\nNow in the repl, we can use `User` and `Post` models. There is also a `print`(alias `p`) helper to print the callback arguments.\n\nFor example:\n\n```js\nPost.find({}, p)\n```\n\n## helpers\n- `print`(alias `p`): print the callback arguments.\n- `_arguments`(alias `_args`): the arguments of `print`.\n- `_0`: `_args[0]`.\n- `_1`: `_args[1]`.\n\n## globals\n- `mongoose`: the mongoose object\n\n\n## lisence\n\nMIT\n\nCopyright (C) <2013> <littlehaker@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+  "readmeFilename": "readme.md",
+  "bugs": {
+    "url": "https://github.com/littlehaker/yongoose/issues"
+  },
+  "_id": "yongoose@0.0.1",
+  "_from": "yongoose@"
 }

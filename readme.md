@@ -5,11 +5,10 @@ Yongoose is a mongoose REPL.
 ## install
 
 ```
-npm install yongoose
+git clone https://github.com/littlehaker/yongoose.git
 ```
 
 ## usage
-
 Create a file `console.js`
 
 ```js

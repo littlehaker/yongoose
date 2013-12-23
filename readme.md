@@ -3,6 +3,10 @@
 Yongoose is a mongoose REPL.
 
 ## install
+```
+npm install yongoose
+```
+or
 
 ```
 git clone https://github.com/littlehaker/yongoose.git
